@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Maquette</title>
+</head>
+<body>
+    
+        <header class="menu">
+            <nav>
+                <div class="site"><h1>Les Films de Plein Air</h1></div>
+                <div class="responsive">
+                    <a href="#"><img src="image/Group 1 (2).svg" height="100%"></a>
+                    <div class="links_resp">
+                        <a href="#"><img src="image/Group 3.svg" class="cross"></a>
+                        <a href="index.html">Accueil</a>
+                        <a href="films.html">Films</a>
+                        <a href="#">Contact</a>
+                        <a href="actualites.html">Actualités</a>
+                    </div>
+                </div>
+                    <div class="links">
+                        <a href="index.html">Accueil</a>
+                        <a href="films.html">Films</a>
+                        <a href="#">Contact</a>
+                        <a href="actualites.html">Actualités</a>
+                    </div>
+            </nav>
+        </header>
+        <main>
+            <aside class="infos">
+                <h2>Du 5 au 8 aoùt 2023</h2>
+                <span>Parc monceau</span>
+                <p>
+                    Projection de films d'auteurs - GRATUIT<br>
+                </p>
+            </aside>
+            <article class="introduce">
+                <h2>L'association les Films de Plein Air</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ad voluptatum recusandae adipisci autem, placeat commodi, minus molestiae iure laboriosam ullam consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!
+                </p>
+            <button class="button"> <a href="actualites.html">En savoir plus</a></button>
+            </article>
+            <div class="pre_list" id="for_script">
+                <aside class="premiere">PROCHAINE SÉANCE</aside>
+                <aside class="affiche"><img src="image/rhums.svg" data-width="300" data-height="400"></aside>
+                <article class="short">
+                    
+                    <h3>35 rhums</h3>
+                    <span class="date">5 aoùt 2023 à 22h</span>
+                    <p> Veuf, Lionel un conducteur de RER sur une ligne de banlieue au nord de Paris, a élevé seul sa fille Joséphine<br> dans une cité de banlieue du nord de Paris. Des liens exclusifs se sont ainsi établis entre le père et sa fille.<br> Joséphine a maintenant grandi et est devenue une jeune femme. Noé, un jeune homme vivant lui aussi seul depuis la mort de ses parents,<br> semble traîner une vie un peu désabusée, faite de missions à l'étranger et de retours dans cet immeuble où sa seule raison de rester est son voisinage avec Joséphine.<br> Lionel réalise qu'il est nécessaire que sa fille s'éloigne de lui pour prendre sa liberté et vivre sa propre vie.<br> Cette séparation est un passage difficile pour tous les deux après avoir été si proches.</p>
+                    <button class="button"><a href="#for_script" id="call_register" data-film ="rhums">S'inscrire à cette séance</a></button>
+                </article>
+            </div>
+            <article class="introduce end">
+                <h2>Parc Monceau</h2>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735531366583!2d2.3067663159005214!3d48.87968700716065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1680008221531!5m2!1sfr!2sfr" width="600" height="375" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <a href="https://goo.gl/maps/n3K7xdFNE5mBpASg7" target="_blank" title="voir sur google">
+                        <img src="image/map.png" data-width="960" data-height="600">
+                    </a> -->
+                </div>
+            
+            </article>
+        </main>
+    <footer class="footer">
+        <div class="access">
+            <span>Acces rapide</span>
+            <a href="index.html" class="first">Accueil</a>
+            <a href="films.html" class="sec">Films</a>
+            <a href="actualites.html" class="third">Actualités</a>
+        </div>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">Mentions légales</a></div>
+    </footer>
+    <div class="inscription" id="register">
+        <form action="#" method="post">
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" autocomplete="email" required>
+            <input type="number" placeholder="Nombre de personnes" required min="1" max="20">
+            <input type="submit" value="S'inscrire" class="button formulaire_click" id="send_form">
+        </form>
+        <img class="img_reservation" src="" id="img_register">
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+    
