@@ -3,44 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,user-scalable=yes, shrink-to-fit=no">
+    <meta name="description" content="Festival de films de plein air à Paris au coeur du parc Monceau, films d'auteurs ey grand cinéma">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/f6f3bbb896.js" crossorigin="anonymous"></script>
     <title>actualites</title>
 </head>
 <body>
     <header class="menu">
         <nav>
-                <div class="site"><h1>Les Films de Plein Air</h1></div>
-                <div class="responsive">
-                    <a href="#"><img src="image/Group 1 (2).svg" height="100%"></a>
-                    <div class="links_resp">
-                        <a href="#"><img src="image/Group 3.svg" class="cross"></a>
-                        <a href="index.html">Accueil</a>
-                        <a href="#">Films</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Actualités</a>
-                    </div>
-                </div>
-                <div class="links">
+            <div class="site">Les Films de Plein Air</div>
+            <div class="responsive" id="menu">
+                <img src="image/Group 1 (2).svg" height="100%" id="hamb">
+            </div>
+                <div class="links_resp" id="menu_resp">
+                    <a href="#"><img src="image/Group 3.svg" class="cross" id="cross"></a>
                     <a href="index.html">Accueil</a>
-                    <a href="#">Films</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Actualités</a>
+                    <a href="films.html">Films</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="actualites.html">Actualités</a>
                 </div>
-            </nav>
-        </header>
+            
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="films.html">Films</a>
+                <a href="contact.html">Contact</a>
+                <a href="actualites.html">Actualités</a>
+            </div>
+        </nav>
+    </header>
     <main class="actu">
-        <h1>ACTUALITÉS</h1>
+        <h1 class="titre_h1">ACTUALITÉS</h1>
         <article class="actualites introduce">
             <div>
-                <h2>LIste des films disponibles</h2><span>24-03-2023</span>
+                <h2>La liste des films est disponible</h2><span>24-03-2023</span>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Esse, ad voluptatum recusandae adipisci autem, placeat commodi, minus molestiae iure laboriosam ullam<br> consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Esse, ad voluptatum recusandae adipisci autem, placeat commodi, minus molestiae iure laboriosam ullam<br> conmodi, minus molestiae iure laboriosam ullam<br> consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!Lorem ipsum dolor sit amodi, minus molestiae iure laboriosam ullam<br> consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!Lorem ipsum dolor s
+                    <a href="films.html" class="to_films">Consulter là </a>lor sit amet consectetur adipisicing elit.<br> Esse, ad voluptatum recusandae adipisci autem, placeat commodi, minus molestiae iure laboriosam ullam<br> consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Esse, ad voluptatum recusandae adipisci autem, placeat commodi, minus molestiae iure laboriosam ullam<br> conmodi, minus molestiae iure laboriosam ullam<br> consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!Lorem ipsum dolor sit amodi, minus molestiae iure laboriosam ullam<br> consequatur! Explicabo expedita laboriosam ad libero eos porro deserunt!Lorem ipsum dolor s
                 </p>
             </div>
-            
                 <img src="image/Group 5.svg" data-width="900" data-height ="450" class="img_act">
-            
         </article>
         <article class="actualites introduce">
             <div>
@@ -49,9 +50,7 @@
                     L'autorisation de projeter dans le patc Monceau vient de nous être accordée.Bla bla bla<br>Bla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla bl<br>Bla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla bl.
                 </p>
             </div>
-            
                 <img src="image/drive-in.webp" data-width="640" data-height ="448" class="img_act">
-            
         </article>
         <article class="actualites introduce">
             <div>
@@ -60,18 +59,23 @@
                     La création de l'association est finalisée.Bla bla bla<br>Bla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla bl Bla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla blBla bla bl.
                 </p>
             </div>
-            
-                <img src="image/auth 1.svg" data-width="340" data-height ="332" class="img_act">
-            
+                <img src="image/approved.png" data-width="293" data-height ="235" class="img_act">
         </article>
     </main>
     <footer class="footer">
         <div class="access">
             <span>Acces rapide</span>
-            <a href="#" class="first">Accueil</a>
-            <a href="#" class="sec">Films</a>
-            <a href="#" class="third">Actualités</a>
-            </div>
-        <div><a href="#">Contact</a></div>
-        <div><a href="#">Mentions légales</a></div>
+            <a href="index.html" class="first">Accueil</a>
+            <a href="films.html" class="sec">Films</a>
+            <a href="actualites.html" class="third">Actualités</a>
+        </div>
+        <div class="contact_bottom">
+            <a href="contact.html">Contact</a>
+            <a href="#"><span class="fa-brands fa-instagram fa-3x"></span></a>
+            <a href="#"><span class="fa-brands fa-facebook fa-3x"></span></a>
+        </div>
+        <div><a href="mentionslegales.html">Mentions légales</a></div>
     </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

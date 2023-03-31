@@ -3,64 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,user-scalable=yes, shrink-to-fit=no">
+    <meta name="description" content="Festival de films de plein air à Paris au coeur du parc Monceau, films d'auteurs ey grand cinéma">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/f6f3bbb896.js" crossorigin="anonymous"></script>
     <title>Maquette</title>
 </head>
 <body>
-    
         <header class="menu">
             <nav>
-                <div class="site"><h1>Les Films de Plein Air</h1></div>
-                <div class="responsive">
-                    <a href="#"><img src="image/Group 1 (2).svg" height="100%"></a>
-                    <div class="links_resp">
-                        <a href="#"><img src="image/Group 3.svg" class="cross"></a>
+                <div class="site">Les Films de Plein Air</div>
+                <div class="responsive" id="menu">
+                    <img src="image/Group 1 (2).svg" height="100%" id="hamb"> 
+                </div>
+                    <div class="links_resp" id="menu_resp">
+                        <a href="#"><img src="image/Group 3.svg" class="cross" id="cross"></a>
                         <a href="index.html">Accueil</a>
                         <a href="films.html">Films</a>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                         <a href="actualites.html">Actualités</a>
                     </div>
-                </div>
+               
                     <div class="links">
                         <a href="index.html">Accueil</a>
                         <a href="films.html">Films</a>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                         <a href="actualites.html">Actualités</a>
                     </div>
             </nav>
         </header>
+        <!-- <h1 class="titre_h1">Liste des films</h1> -->
         <main>
-            <div class="pre_list main_list" id="for_script">
+            <div class="pre_list main_list">
                 <aside class="affiche main_affiche"><img src="image/rhums.svg" data-width="300" data-height="400"></aside>
                 <article class="short main_short">
                     <h3>35 rhums</h3>
                     <span>5 aoùt 2023 à 22h</span>
-                    <p> Veuf, Lionel un conducteur de RER sur une ligne de banlieue au nord de Paris, a élevé seul sa fille Joséphine<br> dans une cité de banlieue du nord de Paris. Des liens exclusifs se sont ainsi établis entre le père et sa fille.<br> Joséphine a maintenant grandi et est devenue une jeune femme. Noé, un jeune homme vivant lui aussi seul depuis la mort de ses parents,<br> semble traîner une vie un peu désabusée, faite de missions à l'étranger et de retours dans cet immeuble où sa seule raison de rester est son voisinage avec Joséphine.<br> Lionel réalise qu'il est nécessaire que sa fille s'éloigne de lui pour prendre sa liberté et vivre sa propre vie.<br> Cette séparation est un passage difficile pour tous les deux après avoir été si proches.</p>
-                    <button class="button"><a href="#for_script" id="call_register" data-film ="rhums">S'inscrire à cette séance</a></button>
-                    <button class="ba"><a href="https://www.youtube.com/watch?v=JcLHYb3boYc" target="_blank">Voir la ba<span class = "yt"></span></a></button>
+                    <p> Veuf, Lionel un conducteur de RER sur une ligne de banlieue au nord de Paris, a élevé seul sa fille Joséphine dans une cité de banlieue du nord de Paris. Des liens exclusifs se sont ainsi établis entre le père et sa fille. Joséphine a maintenant grandi et est devenue une jeune femme. Noé, un jeune homme vivant lui aussi seul depuis la mort de ses parents, semble traîner une vie un peu désabusée, faite de missions à l'étranger et de retours dans cet immeuble où sa seule raison de rester est son voisinage avec Joséphine. Lionel réalise qu'il est nécessaire que sa fille s'éloigne de lui pour prendre sa liberté et vivre sa propre vie. Cette séparation est un passage difficile pour tous les deux après avoir été si proches.</p>
+                    <button class="button" name="call_register" data-film = "image/rhums.svg">S'inscrire à cette séance</button>
+                    <div class="you_tube">
+                            <a href="https://www.youtube.com/watch?v=JcLHYb3boYc" target="_blank">
+                                <img src="image/you_tube.svg">
+                                <span class="yt">Voir le trailer</span>
+                            </a>
+                    </div>
                 </article>
             </div>
-            <div class="pre_list main_list" id="for_script">
-                <aside class="affiche main_affiche"><img src="image/blade_runner.jpg" data-width="300" data-height="450"></aside>
+            <div class="pre_list main_list">
+                <aside class="affiche main_affiche"><img src="image/blade_runner .svg" data-width="267" data-height="450"></aside>
                 <article class="short main_short">
                     <h3>Blade runner</h3>
-                    <span>5 aoùt 2023 à 22h</span>
-                    <p> Veuf, Lionel un conducteur de RER sur une ligne de banlieue au nord de Paris, a élevé seul sa fille Joséphine<br> dans une cité de banlieue du nord de Paris. Des liens exclusifs se sont ainsi établis entre le père et sa fille.<br> Joséphine a maintenant grandi et est devenue une jeune femme. Noé, un jeune homme vivant lui aussi seul depuis la mort de ses parents,<br> semble traîner une vie un peu désabusée, faite de missions à l'étranger et de retours dans cet immeuble où sa seule raison de rester est son voisinage avec Joséphine.<br> Lionel réalise qu'il est nécessaire que sa fille s'éloigne de lui pour prendre sa liberté et vivre sa propre vie.<br> Cette séparation est un passage difficile pour tous les deux après avoir été si proches.</p>
-                    <button class="button"><a href="#for_script" id="call_register" data-film ="rhums">S'inscrire à cette séance</a></button>
-                    <button class="ba"><a href="https://www.youtube.com/watch?v=eogpIG53Cis" target="_blank">Voir la ba<span class = "yt"></span></a></button>
+                    <span>6 aoùt 2023 à 22h</span>
+                    <p> Dans les dernières années du 20ème siècle, des milliers d'hommes et de femmes partent à la conquête de l'espace, fuyant les mégalopoles devenues insalubres. Sur les colonies, une nouvelle race d'esclaves voit le jour : les répliquants, des androïdes que rien ne peut distinguer de l'être humain. Los Angeles, 2019. Après avoir massacré un équipage et pris le contrôle d'un vaisseau, les répliquants de type Nexus 6, le modèle le plus perfectionné, sont désormais déclarés "hors la loi". Quatre d'entre eux parviennent cependant à s'échapper et à s'introduire dans Los Angeles. Un agent d'une unité spéciale, un blade-runner, est chargé de les éliminer. Selon la terminologie officielle, on ne parle pas d'exécution, mais de retrait..</p>
+                    <button class="button" name="call_register" data-film = "image/blade_runner .svg">S'inscrire à cette séance</button>
+                    <div class="you_tube">
+                        
+                        <a href="https://youtu.be/eogpIG53Cis" target="_blank">
+                            <img src="image/you_tube.svg">
+                            <span class="yt">Voir le trailer</span>
+                        </a>
+                   
+                </div>
+                </article>
+            </div>
+            <div class="pre_list main_list">
+                <aside class="affiche main_affiche"><img src="image/reservoir_dogs.webp" data-width="300" data-height="399"></aside>
+                <article class="short main_short">
+                    <h3>Resrvoir dogs</h3>
+                    <span>7 aoùt 2023 à 22h</span>
+                    <p> Six truands désignés par des noms de code entreprennent de dévaliser une bijouterie sous la direction de Joe Cabot et de son fils Nice Guy Eddie. L'opération échoue et se solde par un bain de sang. Les malfrats se réfugient dans un entrepôt sordide. L'un d'eux soupçonne la présence d'une taupe...</p>
+                    <button class="button" name="call_register" data-film = "image/reservoir_dogs.webp">S'inscrire à cette séance</button>
+                    <div class="you_tube">
+                        
+                        <a href="https://youtu.be/pswIExH61dw" target="_blank">
+                            <img src="image/you_tube.svg">
+                            <span class="yt">Voir le trailer</span>
+                        </a>
+                   
+                </div>
 
                 </article>
             </div>
-            <div class="pre_list main_list" id="for_script">
-                <aside class="affiche main_affiche"><img src="image/rhums.svg" data-width="300" data-height="400"></aside>
+            <div class="pre_list main_list">
+                <aside class="affiche main_affiche"><img src="image/the_big_lebowski.jpg" data-width="300" data-height="409"></aside>
                 <article class="short main_short">
-                    <h3>35 rhums</h3>
-                    <span>5 aoùt 2023 à 22h</span>
-                    <p> Veuf, Lionel un conducteur de RER sur une ligne de banlieue au nord de Paris, a élevé seul sa fille Joséphine<br> dans une cité de banlieue du nord de Paris. Des liens exclusifs se sont ainsi établis entre le père et sa fille.<br> Joséphine a maintenant grandi et est devenue une jeune femme. Noé, un jeune homme vivant lui aussi seul depuis la mort de ses parents,<br> semble traîner une vie un peu désabusée, faite de missions à l'étranger et de retours dans cet immeuble où sa seule raison de rester est son voisinage avec Joséphine.<br> Lionel réalise qu'il est nécessaire que sa fille s'éloigne de lui pour prendre sa liberté et vivre sa propre vie.<br> Cette séparation est un passage difficile pour tous les deux après avoir été si proches.</p>
-                    <button class="button"><a href="#for_script" id="call_register" data-film ="rhums">S'inscrire à cette séance</a></button>
-                    <button class="ba"><a href="https://www.youtube.com/watch?v=JcLHYb3boYc" target="_blank">Voir la ba<span class = "yt"></span></a></button>
-
+                    <h3>The Big Lebowski</h3>
+                    <span>8 aoùt 2023 à 22h</span>
+                    <p> Jeff Lebowski, prénommé le Duc, est un paresseux qui passe son temps à boire des coups avec son copain Walter et à jouer au bowling, jeu dont il est fanatique. Un jour deux malfrats le passent à tabac. Il semblerait qu'un certain Jackie Treehorn veuille récupérer une somme d'argent que lui doit la femme de Jeff. Seulement Lebowski n'est pas marié. C'est une méprise, le Lebowski recherché est un millionnaire de Pasadena. Le Duc part alors en quête d'un dédommagement auprès de son richissime homonyme...</p>
+                    <button class="button" name="call_register" data-film = "image/the_big_lebowski.jpg">S'inscrire à cette séance</button>
+                    <div class="you_tube">
+                        
+                        <a href="https://youtu.be/l7DLqUvZXOE" target="_blank">
+                            <img src="image/you_tube.svg">
+                            <span class="yt">Voir le trailer</span>
+                        </a>
+                   
+                </div>
                 </article>
             </div>
         </main>
@@ -71,16 +109,22 @@
             <a href="films.html" class="sec">Films</a>
             <a href="actualites.html" class="third">Actualités</a>
         </div>
-        <div><a href="#">Contact</a></div>
-        <div><a href="#">Mentions légales</a></div>
+        <div class="contact_bottom">
+            <a href="contact.html">Contact</a>
+            <a href="#"><span class="fa-brands fa-instagram fa-3x"></span></a>
+            <a href="#"><span class="fa-brands fa-facebook fa-3x"></span></a>
+        </div>
+        <div><a href="mentionslegales.html">Mentions légales</a></div>
     </footer>
     <div class="inscription" id="register">
+        <h3>Inscription</h3>
         <form action="#" method="post">
             <input type="text" placeholder="Nom" required>
             <input type="email" placeholder="Email" autocomplete="email" required>
             <input type="number" placeholder="Nombre de personnes" required min="1" max="20">
             <input type="submit" value="S'inscrire" class="button formulaire_click" id="send_form">
         </form>
+        <img src="image/Group 3.svg" class="cross" id="close_reg">
         <img class="img_reservation" src="" id="img_register">
     </div>
     <script src="scripts/script.js"></script>
