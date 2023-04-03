@@ -71,7 +71,7 @@
             <div class="pre_list main_list">
                 <aside class="affiche main_affiche"><img src="image/reservoir_dogs.webp" data-width="300" data-height="399" alt="affiche du film reservoir dogs"></aside>
                 <article class="short main_short">
-                    <h3>Resrvoir dogs</h3>
+                    <h3>Reservoir dogs</h3>
                     <span>7 aoùt 2023 à 22h</span>
                     <p> Six truands désignés par des noms de code entreprennent de dévaliser une bijouterie sous la direction de Joe Cabot et de son fils Nice Guy Eddie. L'opération échoue et se solde par un bain de sang. Les malfrats se réfugient dans un entrepôt sordide. L'un d'eux soupçonne la présence d'une taupe...</p>
                     <button class="button" name="call_register" data-film = "image/reservoir_dogs.webp">S'inscrire à cette séance</button>
@@ -120,11 +120,11 @@
     </footer>
     <div class="inscription" id="register">
         <h3>Inscription</h3>
-        <form action="#" method="post">
+        <form action="#" method="post" id="form">
             <input type="text" placeholder="Nom" required>
             <input type="email" placeholder="Email" autocomplete="email" required>
             <input type="number" placeholder="Nombre de personnes" required min="1" max="20">
-            <input type="submit" value="S'inscrire" class="button formulaire_click" id="send_form">
+            <input type="submit" value="S'inscrire" class="button" id="send_form"><span id="message" class="message">Inscription réussit</span>
         </form>
         <img src="image/cross.svg" class="cross" id="close_reg" alt="icone fermeture menu">
         <img class="img_reservation" src="image/blade_runner.svg" id="img_register" alt="affiche du film">

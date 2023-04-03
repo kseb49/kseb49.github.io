@@ -3,7 +3,27 @@ const button = document.getElementsByName('call_register')
 const image = document.getElementById('img_register')
 const shut = document.getElementById('close_reg')
 const buttonToLInk = document.getElementById('buttonToLink')
-/*toggle the register form*/
+const form = document.getElementById('form')
+const sent = document.getElementById('message')
+const send = document.getElementById('send_form')
+
+/*highlight the close img on small device */
+if(window.innerWidth <= 600){
+  shut.src = "image/cross_bold.svg";
+  shut.style.backgroundColor="black"
+}
+window.addEventListener('resize',(e)=>{
+  if(window.innerWidth <= 600){
+    shut.src = "image/cross_bold.svg";
+    shut.style.backgroundColor="black"
+  }
+  else{
+    shut.src = "image/cross.svg";
+    shut.style.backgroundColor="inherit"
+  }
+})
+
+/*toggle the display of the register form*/
 for (const key in button) {
   if (Object.hasOwnProperty.call(button, key)) {
     const element = button[key]
@@ -12,18 +32,37 @@ for (const key in button) {
       register.style.top = window.scrollY+"px"
       register.style.left = window.scrollX+"px"
       image.src=`${button[key].dataset.film}`
+      form.addEventListener('submit',(e)=>{
+        e.preventDefault()
+        sent.style.display="inline"
+        setTimeout(()=>{ 
+          register.style.top = "-"+window.scrollY+"px"
+          register.style.left = "-"+window.scrollX+"px"
+          sent.style.display="none"
+          register.style.display = "none"
+
+        },1500)
+    })
+    
       document.addEventListener('keydown',(e)=>{
         if(e.code == "Escape"){
-          register.style.display = "none"
+          register.style.top = "-"+window.scrollY+"px"
+          register.style.left = "-"+window.scrollX+"px"
+          setTimeout(()=>{register.style.display = "none"},600)
+          
         }
      })
       shut.addEventListener('click',(e)=>{
-        register.style.display = "none"
+        register.style.top = "-"+window.scrollY+"px"
+        register.style.left = "-"+window.scrollX+"px"
+          setTimeout(()=>{register.style.display = "none"},600)
       })
     })
   }
 }
-/*toggle the responsive menu */
+
+
+/*toggle the display of the responsive menu */
 const menu = document.getElementById('menu')
 const closer = document.getElementById('cross')
 const menu_resp = document.getElementById('menu_resp')

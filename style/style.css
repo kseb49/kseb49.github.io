@@ -29,8 +29,6 @@ body{
     background-color: var(--grey_darker_opa);
     color: var(--grey);
 }
-
-    
 h1{
     margin:0;
     padding: 0;
@@ -221,7 +219,7 @@ nav{
     box-shadow: inset 1px 1px 4px var(--yellow);
     background-color: var(--grey_darker_opa);
     border-radius: 5px;
-    transition: transform .6s ease;
+    transition: all .6s ease;
 }
 .inscription form{
     display: grid;
@@ -230,6 +228,7 @@ nav{
 }
 .inscription input{
     font-family: inherit;
+    font-weight: bold;
     
     width: 250px;
     height: 3em;
@@ -245,11 +244,17 @@ nav{
     font-size: 2em;
     margin: 0;
 }
+.message{
+    display: none;
+    font-size: 1.5rem;
+    color: greenyellow;
+}
 .cross{
     grid-area:cross;
 }
 .cross:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 .inscription input:hover{
     box-shadow: inset 5px 5px 5px var(--yellow), inset -5px -5px 5px var(--yellow);
@@ -258,6 +263,10 @@ nav{
     box-shadow: 5px 5px 5px var(--yellow), -5px -5px 5px var(--yellow);
     outline: none;
     border: 2px solid var(--grey_darker);
+}
+.inscription input::placeholder{
+    font-weight: bold;
+    opacity: 0.7;
 }
 .contact{
     display:grid;
