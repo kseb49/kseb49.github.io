@@ -2,7 +2,8 @@ const register = document.getElementById('register')
 const button = document.getElementsByName('call_register')
 const image = document.getElementById('img_register')
 const shut = document.getElementById('close_reg')
-/*toggle register form*/
+const buttonToLInk = document.getElementById('buttonToLink')
+/*toggle the register form*/
 for (const key in button) {
   if (Object.hasOwnProperty.call(button, key)) {
     const element = button[key]
@@ -22,7 +23,7 @@ for (const key in button) {
     })
   }
 }
-/*toggle responsive menu */
+/*toggle the responsive menu */
 const menu = document.getElementById('menu')
 const closer = document.getElementById('cross')
 const menu_resp = document.getElementById('menu_resp')
@@ -32,6 +33,10 @@ menu.addEventListener('click',(e)=>{
 closer.addEventListener('click',(e)=>{
   menu_resp.style.transform = "translateX(-107%)"
 })
-
-
+/*Add a redirection to the button*/
+if(buttonToLInk){
+  buttonToLInk.addEventListener('click',(e)=>{
+    window.location = "actualites.html";
+  })
+}
 

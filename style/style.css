@@ -5,7 +5,7 @@
     --grey_dark: #232424;
     --grey_darker:#1b1d23;
     --grey_dark_opa: hsl(180, 1%, 14%,40%);
-    --grey_darker_opa:hsl(225, 13%, 7%,89%);;
+    --grey_darker_opa:hsl(225, 13%, 7%,89%);
     --red_dark:#2b0707;
     --red_dark_opa:hsl(0, 72%, 10%,15%);
     --red: #560e0e;
@@ -55,8 +55,7 @@ header{
 }
 nav{
     display: grid;
-    /* grid-template-areas: "title acc list cont actu"; */
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns:7fr 5fr;
     justify-items: center;
     align-items: center;
     height: 100%;
@@ -132,6 +131,7 @@ nav{
 .button:hover{
     background-color: var(--red_dark);
     color: #fff;
+    cursor: pointer;
 }
 .pre_list{
     height: auto;
@@ -306,9 +306,6 @@ nav{
     background-color: var(--grey_darker);
     justify-items: center;
     align-items: center;
-    /* position: fixed;
-    left: 0;
-    bottom: 0; */
     width: 100vw;
 }
 .access{
@@ -559,10 +556,6 @@ footer div a:hover{
     .site{
         font-size: inherit;
     }
-    /* .responsive a:focus~div{
-        transform: translateX(50%);
-        z-index: 10;
-    } */
 }
 @media screen and (max-width:310px){
     .button,textarea,input{
@@ -575,6 +568,6 @@ footer div a:hover{
         width: 100vw;
     }
     .infos{
-        font-size: 1;
+        font-size: 1rem;
     }
 }
