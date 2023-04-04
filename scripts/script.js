@@ -6,28 +6,14 @@ const buttonToLInk = document.getElementById('buttonToLink')
 const form = document.getElementById('form')
 const sent = document.getElementById('message')
 const send = document.getElementById('send_form')
-
-/*highlight the close img on small device */
-if(window.innerWidth <= 600){
-  shut.src = "image/cross_bold.svg";
-  shut.style.backgroundColor="black"
-}
-window.addEventListener('resize',(e)=>{
-  if(window.innerWidth <= 600){
-    shut.src = "image/cross_bold.svg";
-    shut.style.backgroundColor="black"
-  }
-  else{
-    shut.src = "image/cross.svg";
-    shut.style.backgroundColor="inherit"
-  }
-})
+const success = document.getElementById('success')
+const contact = document.getElementById('contact')
+const url = window.location.pathname
 
 /*toggle the display of the register form*/
 for (const key in button) {
   if (Object.hasOwnProperty.call(button, key)) {
-    const element = button[key]
-    button[key].addEventListener('click',(e)=>{
+      button[key].addEventListener('click',(e)=>{
       register.style.display = "grid"
       register.style.top = window.scrollY+"px"
       register.style.left = window.scrollX+"px"
@@ -43,13 +29,11 @@ for (const key in button) {
 
         },1500)
     })
-    
       document.addEventListener('keydown',(e)=>{
         if(e.code == "Escape"){
           register.style.top = "-"+window.scrollY+"px"
           register.style.left = "-"+window.scrollX+"px"
           setTimeout(()=>{register.style.display = "none"},600)
-          
         }
      })
       shut.addEventListener('click',(e)=>{
@@ -61,7 +45,6 @@ for (const key in button) {
   }
 }
 
-
 /*toggle the display of the responsive menu */
 const menu = document.getElementById('menu')
 const closer = document.getElementById('cross')
@@ -72,6 +55,7 @@ menu.addEventListener('click',(e)=>{
 closer.addEventListener('click',(e)=>{
   menu_resp.style.transform = "translateX(-107%)"
 })
+
 /*Add a redirection to the button*/
 if(buttonToLInk){
   buttonToLInk.addEventListener('click',(e)=>{
@@ -79,3 +63,12 @@ if(buttonToLInk){
   })
 }
 
+/*success message on submit */
+const searchC = new RegExp('(contact)')
+if(searchC.test(url))
+contact.addEventListener('submit',(e)=>{
+  e.preventDefault()
+  success.innerText= "Votre message a été envoyé"
+  success.style.color = "#2ecc71"
+  success.style.fontWeight = "bold"
+})
