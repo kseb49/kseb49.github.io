@@ -12,10 +12,6 @@
     --red: #560e0e;
     --yellow: #ffda79;
 }
-
-/* *{
-    box-shadow: inset 1px 1px 1px red;
-} */
 body,
 html {
     margin: 0;
@@ -95,51 +91,45 @@ nav {
 }
 
 .links_resp {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
     position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
     width: 50%;
     height: 350px;
     background-color: var(--grey_darker_opa);
     border-radius: 2%;
     color: inherit;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    align-content: space-evenly;
     text-decoration: underline;
     text-underline-offset: 3px;
     transition: transform 0.4s ease;
 }
-
 .infos,
 .introduce {
     height: 200px;
     padding: 5em;
     text-shadow: 1px 1px 3px var(--red_dark);
 }
-
 .infos {
     background: url(../image/cinema_bcg.svg) no-repeat 76% 40%/ 100% border-box;
     font-size: 1.7rem;
 }
-
 .introduce {
     margin-left: 10vw;
-    text-align: right;
     margin-top: 2vh;
+    text-align: right;
     background-color: var(--grey_dark);
     box-shadow: 1px 1px 5px var(--red_dark);
 }
-
 .introduce p {
     padding: 1em;
 }
-
 .button,
 .ba {
-    background-color: var(--yellow);
     height: 5vh;
     width: 22vw;
     font-family: inherit;
@@ -147,16 +137,15 @@ nav {
     font-weight: bold;
     border: none;
     border-radius: 10px;
+    background-color: var(--yellow);
     box-shadow: 1px 1px 8px var(--red);
     transition: all .3s ease-in;
 }
-
 .button:hover {
     background-color: var(--red_dark);
     color: #fff;
     cursor: pointer;
 }
-
 .pre_list {
     height: auto;
 
@@ -174,13 +163,11 @@ nav {
 
     background-color: var(--red_dark_opa);
 }
-
 .affiche {
     width: 100%;
     grid-area: aff;
     align-self: center;
 }
-
 .premiere {
     font-size: 4.4rem;
     grid-area: premiere;
@@ -189,7 +176,6 @@ nav {
     color: var(--yellow);
     text-shadow: 1px 1px 2px var(--grey);
 }
-
 .short {
     grid-area: text;
     display: grid;
@@ -198,32 +184,26 @@ nav {
     align-items: center;
     row-gap: 1em;
 }
-
 .short h2 {
     align-self: flex-end;
 }
-
 .short span {
     align-self: flex-start;
     font-size: 1.2rem !important;
     font-style: italic;
 }
-
 .short p {
     align-self: flex-start;
     padding: 1em 2em 1em 2em;
 }
-
 .short h3 {
     font-size: 1.8rem;
     margin: 5px;
 }
-
 .parc {
     width: 600px;
     height: 375px;
 }
-
 .end {
     height: auto;
     margin: 2em;
@@ -236,7 +216,8 @@ nav {
     max-width: 100%;
     opacity: 0.7;
     transition: opacity .4s;
-}.end iframe:hover {
+}
+.end iframe:hover {
    opacity: 1;
 }
 .inscription {
@@ -248,22 +229,18 @@ nav {
     position: absolute;
     top: 0;
     left: -50%;
-
     width: 90vh;
     height: 60vh;
-
     box-shadow: inset 1px 1px 4px var(--yellow);
     background-color: var(--grey_darker_opa);
     border-radius: 5px;
     transition: all .6s ease;
 }
-
 .inscription form {
     display: grid;
     grid-template-rows: repeat(4, 40px);
     gap: 1.5em;
 }
-
 .inscription input {
     font-family: inherit;
     font-weight: bold;
@@ -277,43 +254,35 @@ nav {
     transition: box-shadow, border .5s ease;
 
 }
-
 .inscription h3 {
     grid-area: titre;
     font-size: 2em;
     margin: 0;
 }
-
 .message {
     display: none;
     font-size: 1.5rem;
     color: greenyellow;
 }
-
 .cross {
     grid-area: cross;
 }
-
 .cross:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-
 .inscription input:hover {
     box-shadow: inset 5px 5px 5px var(--yellow), inset -5px -5px 5px var(--yellow);
 }
-
 .inscription input:focus {
     box-shadow: 5px 5px 5px var(--yellow), -5px -5px 5px var(--yellow);
     outline: none;
     border: 2px solid var(--grey_darker);
 }
-
 .inscription input::placeholder {
     font-weight: bold;
     opacity: 0.7;
 }
-
 .contact {
     display: grid;
     grid-template-areas: "form coord"
@@ -324,46 +293,38 @@ nav {
     border: 1px solid var(--grey);
     box-shadow: 0 1px 96px var(--grey_opa);
 }
-
 .contact form {
     display: flex;
     flex-direction: column;
 }
-
 .contact input,
 textarea {
+    margin: 1em;
     background-color: var(--grey);
     font-family: inherit;
     border: 2px solid var(--grey_dark);
     border-radius: 5px;
-    margin: 1em;
 }
-
 .contact input {
     height: 3em;
     width: 250px;
 }
-
 .contact input:hover {
     box-shadow: inset 5px 5px 5px var(--yellow), inset -5px -5px 5px var(--yellow);
 }
-
 .coord {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
-
 .coord aside {
     display: flex;
     justify-content: center;
 }
-
 .coord aside span {
     margin: 1em;
 }
-
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -372,7 +333,6 @@ textarea {
     align-items: center;
     width: 100vw;
 }
-
 .access {
     display: grid;
     grid-template-areas:
@@ -381,28 +341,23 @@ textarea {
         "third third";
     grid-template-columns: 1fr 1fr;
 }
-
 .access span {
     grid-area: desc;
     justify-self: center;
     font-weight: bold;
 }
-
 .first {
     grid-area: first;
     justify-self: left;
 }
-
 .sec {
     grid-area: sec;
     justify-self: right;
 }
-
 .third {
     grid-area: third;
     justify-self: center;
 }
-
 .contact_bottom {
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -411,22 +366,17 @@ textarea {
     "contact contact"
     "insta facebook"; */
 }
-
 .contact_bottom a:first-child {
-    /* grid-area: contact; */
     grid-column: 1 /span2;
     justify-self: center;
 }
-
 .contact_bottom span:first-child {
     /* grid-area: insta; */
     margin: 1px;
 }
-
 footer div a:hover {
     text-decoration: underline;
 }
-
 .actualites {
     text-align: center;
     margin: 2em;
@@ -436,20 +386,17 @@ footer div a:hover {
     height: auto;
     margin-bottom: 2em;
 }
-
 .actualites div:first-child {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
 }
-
 .actualites span,
 .short span {
     font-weight: bold;
-    color: var(--yellow);
     font-size: 1.1rem;
+    color: var(--yellow);
 }
-
 .img_act {
     display: block;
 
@@ -459,56 +406,46 @@ footer div a:hover {
     justify-self: center;
     align-self: center;
 }
-
 .titre_h1 {
     text-align: center;
     font-size: 2.5em;
     margin-top: 2.4em;
     /* margin-bottom: 2.4em; */
 }
-
 .to_films {
     color: var(--yellow);
     font-weight: bold;
     text-decoration: underline;
 }
-
 .to_films:hover {
     color: var(--red);
     font-weight: bold;
 }
-
 .main_list {
     grid-template-areas: "aff text";
     grid-template-rows: auto;
     margin-top: 5em;
 }
-
 .main_list h3 {
     font-size: 4rem;
 }
-
 .main_affiche {
     align-self: center;
 }
-
 .ba {
     background-color: var(--red);
     box-shadow: 1px 1px 8px var(--yellow);
     /* position: relative; */
 }
-
 .you_tube {
     position: relative;
 }
-
 .yt {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: var(--yellow) !important;
 }
-
 .ml {
     text-align: justify;
 }
@@ -681,22 +618,18 @@ footer div a:hover {
 }
 
 @media screen and (max-width:310px) {
-
     .button,
     textarea,
     input {
         width: auto !important;
     }
-
     .titre_h1 {
         font-size: 1.5em;
     }
-
     .coord,
     form {
         width: 100vw;
     }
-
     .infos {
         font-size: 1rem;
     }
